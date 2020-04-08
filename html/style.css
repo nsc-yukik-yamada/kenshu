@@ -1,0 +1,74 @@
+/* HTMLのヘッダーのスタイル */
+header {
+    /* 背景色を　オレンジ　に設定 */
+    background: #ffcc99;
+    text-align: center;
+    /* パディングの設定、　自分の領域より内側にとる距離 */
+    padding: 20px;
+}
+
+/* HTMLにあるheader-boxクラスのスタイル */
+.header-box {
+    /* 横幅を指定 */
+    width: 940px;
+
+    /* マージンを指定　自分の領域より外に対しての距離 
+    上下に0　左右は自動計算*/
+    margin: 0 auto;
+    }
+
+    .header-box a{
+        
+    }
+/* HTMLにあるidがprofile-imagaの画像のスタイル */
+#profile-image {
+    /* 横幅を指定 */
+    width: 300px;
+    /* 高さは自動で計算する */
+    height: auto;
+}
+
+h1 {
+    text-align:center;
+}
+
+.myfv li {
+    /*回り込み*/
+    display:inline-block;
+    text-align:center;
+    vertical-align:top;
+
+    /*ボーダーをつける*/
+    border-color:#000000;
+    border-width: 2px;
+    border-style: solid;
+    
+}
+
+.myfv li:hover{
+    border-color: blueviolet;
+}
+
+.myfv li:hover h2{
+    font-size:32px;
+}
+
+/*好きなものリストの画像サイズ調整*/
+.myfv img {
+    /*高さを指定*/
+    height: 300px;
+    width: auto;
+}
+
+
+
+
+footer {
+    /* 背景色を　オレンジ　に設定 */
+    background: #ffcc99;
+    text-align: center;
+    /* パディングの設定、　自分の領域より内側にとる距離 */
+    padding: 20px;
+}
+
+
