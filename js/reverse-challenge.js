@@ -1,5 +1,5 @@
 //変数定義
-let num1 = 5 , num2 = 8;
+let num1 = 5 , num2 = 9;
 
 //pattern 1
 console.log("pattern1");

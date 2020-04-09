@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>四則演算の研修</title>
+    </head>
+
+    <body>
+<!--ベタ打ちコメントアウト-->
+        <script>
+        //変数定義
+           let count1,count2,result;
+
+        //表示用
+           function printScreen(message,result){
+               document.write(message , "の結果 : ",result);
+               document.write("<br/>");
+           }
+
+        //数字の獲得
+           count1 = parseInt(prompt("1つめの数字を入力してください"));
+           count2 = parseInt(prompt("2つめの数字を入力してください"));
+
+           console.log(count1);
+           console.log(count2);
+
+        //足し算
+           result = count1 + count2;
+           printScreen("足し算",result);
+
+        //引き算
+           result = count1 - count2;
+           printScreen("引き算",result);
+
+        //かけ算
+           result = count1 * count2;
+           printScreen("かけ算",result);
+
+        //割り算
+           result = count1 / count2;
+           printScreen("割り算",result);
+
+           console.log('ok');
+
+        </script>
+    </body>
+</html>

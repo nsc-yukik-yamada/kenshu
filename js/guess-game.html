@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <label for="number"> 数字を予想してください</label>
+    <input id="number" />
+    <button>実行</button>
+
+    <script>
+      // ランダムな基準値を作成
+      function generateRandomNumber() {
+        secret = Math.random() * 10;
+        secret = Math.round(secret);
+      }
+
+      //正解不正解判断
+      function check() {
+        if (secret == input.value) {
+          alert("正解");
+          seclet = generateRandomNumber();
+        } else {
+          alert("不正解");
+        }
+        input.focus();
+        console.log(secret);
+      }
+
+      var secret = generateRandomNumber();
+      var input = document.querySelector("#number");
+      let button = document.querySelector("button");
+
+      button.onclick = check;
+    </script>
+  </body>
+</html>
