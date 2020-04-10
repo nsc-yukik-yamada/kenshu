@@ -9,7 +9,7 @@ function arraySumWithFor(array) {
         sum +=  numbers[i];
     } 
 
-    return sum
+    return sum;
 }
 
 function arraySumWithWhile(array) {
@@ -21,7 +21,7 @@ function arraySumWithWhile(array) {
         i++;
     }
 
-    return sum
+    return sum;
 }
 
 function arraySumWithDoWhile(array) {
@@ -39,7 +39,7 @@ do
 }
 while(i < length)
 
-    return sum
+    return sum;
 }
 
 function arraySumWithForEach(array) {
@@ -50,7 +50,8 @@ function arraySumWithForEach(array) {
         
         sum +=  value;
     });
-    return sum
+ 
+    return sum;
 }
 
 let forSum = arraySumWithFor(numbers);
