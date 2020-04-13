@@ -28,7 +28,7 @@ class Wizard extends Character {
       super(name, hp, mp, weapon);
     }
 
-   heal(name,) {
+   magic(name,) {
         console.log(name, "が魔法を使った");
       }
     
@@ -46,7 +46,22 @@ class Cleric extends Character {
     
   }
 
+  //  バーサーカーの設定
+class berseker extends Character {
+    constructor(name, hp, mp, weapon) {
+      super(name, hp, mp, weapon);
+    }
+
+   bersk(name) {
+        console.log(name, "が獣化した");
+      }
+    
+  }
+
+
   
 let hero = new Yuusha("勇者", 100, 25, "剣");
 console.log(hero);
 hero.attack(hero.name);
+
+
