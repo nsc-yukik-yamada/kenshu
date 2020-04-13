@@ -9,22 +9,21 @@ return arrey;
 
 // 与えられた数列と数字を掛けて結果を表示する。
 function mash(arrey,number){
-    let returnArrey = [];
+    let text = "";
     for(let i = 0; i < arrey.length ; i++){
-        returnArrey.push(arrey[i] * number);
+        text += (String(arrey[i] * number)+" ");
     }
-    console.log(number,"の段",returnArrey);
+    console.log(text);
 }
 
 // 与えられた数列と数字を掛けて結果を文字列として表示する。
 function mash2(arrey,number){
-    let returnArrey = [];
+    let text = "";
     for(let i = 0; i < arrey.length ; i++){
         //0埋めした3桁の文字列を作成
-        let text = ("000"+ String(arrey[i] * number)).slice(-3);
-        returnArrey.push(text);
+        text += (("000"+ String(arrey[i] * number)).slice(-3)+ " ");
     }
-    console.log(number,"の段",returnArrey);
+    console.log(text);
 }
 
 // 数列セット
