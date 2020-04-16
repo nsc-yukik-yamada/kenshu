@@ -1,0 +1,43 @@
+js/reverse-challenge.js
+  処理ばっちりです！
+  それぞれのパターンとログの書き出しを関数にしているのは上出来です。
+  ログの書き出し関数でしっかりDRYができていますね！
+  
+ js/guess-game.html
+  Line 29:generateRandomNumber()の戻り値をsecretに入れていますが、generateRandomNumberでは何の値も返していないです。
+  
+  あと、 var secretの値を直接generateRandomNUmberで捜査しているため、secretの中身を途中で変更される可能性があります。
+  理想は、generateRandomNumberのなかで一時的な変数を定義して、必要な処理をした後、その変数の値をreturnするようなコードだと、
+  だれがgenerateRandomNumberを呼び出ししても必ずランダムな数字が作成できる関数になります。
+  
+js/oop/RpgClass.js/Caracter.js
+  Line 31: メソッドのパラメーターが一つの場合は最後にカンマをつけなくてもいいです。
+  
+  全体的にattack,magic,heal,berskなどのメソッドでキャラクターの名前をパラメーターとしてもらうような書き方になっていますが、
+  名前はその動作を呼び出しているオブジェクトの中にあるので、パラメーターとして渡してもらうのではなく、this.nameで取得したほうがいいコードになります。
+  
+  js/js-kadai/area.js
+    全体的にばっちりなコードです。
+    自分はもう少しすっきりしたコードが好きなので、案として以下のことを指摘します。
+    function checkSize(name, size) {
+      ifの中でcheckSizeに値を入れていますが、true・falseを取得したいのであれば、
+      checkSize = size > 0 && size <= 1000;
+      そしてログ用に一つifを入れます。
+      if(!checkSize) {
+        console.log(name, "の長さを1～1000の間で指定してください");
+      }
+      return checkSize;
+    }
+    
+    Line 37: lengthSize, widthSize はBooleanが入っているので==を使わずに直接ifに入れて使ってもいいですね
+    if(lengthSize && widthSize) {}
+      
+js/js-kadai/even-odd.js
+  checkNumber(number) => number % 2 は0,1のどちらかしかにならなく0,1はfalse,trueとして扱われるので直接
+  return　number%2;とすると少しすっきりします。
+  
+  Line 16,40: checkの変数はtrue,falseのどちらかしか入れていないのでifの中でもう一度==のチェックはもったいないです。
+  true == true => true, false == true => falseですが結局結果を決めているのがcheckの値なので直接使うようにしてください。
+  
+js/js_kadai/factorial.js
+Line 5: 関数名はできるだけ小文字で始めてください。
