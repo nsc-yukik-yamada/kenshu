@@ -10,8 +10,9 @@
     <script>
       // ランダムな基準値を作成
       function generateRandomNumber() {
-        secret = Math.random() * 10;
+        let secret = Math.random() * 10;
         secret = Math.round(secret);
+        return secret;
       }
 
       //正解不正解判断
@@ -26,7 +27,7 @@
         console.log(secret);
       }
 
-      var secret = generateRandomNumber();
+      let secret = generateRandomNumber();
       var input = document.querySelector("#number");
       let button = document.querySelector("button");
 
