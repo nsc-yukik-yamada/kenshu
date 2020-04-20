@@ -101,7 +101,8 @@ for (let i = 0; i < arrey.length; i++) {
   console.log(sortArrey);
 
 // makeFibonacci(数列の初期値,配列の要素数)
-let fibonacci = makeFibonacci(1, 10);
+const shoki = 1;
+let fibonacci = makeFibonacci(shoki, 10);
 console.log(fibonacci);
 
 //素数チェック
