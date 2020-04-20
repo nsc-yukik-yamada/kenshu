@@ -51,9 +51,6 @@ console.log(`数列${arrey1},数列${arrey2}`);
 console.log(`最大値は${maxNumber}`);
 console.log(`最小値は${minNumber}`);
 
-maxNumber = 0;
-minNumber = 100;
-
 arrey1 = getRandomNomber();
 arrey2 = getRandomNomber();
 

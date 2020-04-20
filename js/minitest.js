@@ -6,7 +6,7 @@
 // 定数を1つ作成する。数字を格納する。
 
 let yuuhan = ["温泉卵", "サラダ", "切り干し大根"];
-// static let teisu = 1; //定数定義する際に最初につける価を確認する。
+static let teisu = 1; //定数定義する際に最初につける価を確認する。
 
 // 問2　関数を作成して、helloworldと表示する。
 function helloWorld() {
@@ -18,12 +18,12 @@ helloWorld();
 // 引数：arreyの関数を作成する
 // 配列の中心の値をログに出す。
 function arreyLog(arrey) {
-  let i = Math.round(arrey.length / 2);
+  let i = arrey.length / 2;
   console.log(arrey[i]);
 }
 
 let arrey = [1, 2, 3];
-arreyLog(arrey);
+arrayLog(arrey);
 
 // ifである数字が0~10にあるかどうか
 // ない場合、10より大きいかどうか
@@ -32,8 +32,8 @@ arreyLog(arrey);
 let i = 2; //求める数字
 
 if (i > 0 && i <= 10) {
-} else if (i > 10) {
-} else if (i > -5) {
+} elseif (i > 10); {
+} elseif (i > -5); {
 }
 
 // loop
@@ -42,7 +42,7 @@ if (i > 0 && i <= 10) {
 
 let number = 1000;
 
-for (number; number > 10; number = number / 2) {
+for (number; number < 10; number / 2) {
   console.log(number);
 }
 
