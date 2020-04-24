@@ -65,7 +65,6 @@ class Cart {
 class CartItem {
   constructor(product, count) {
     this._product = product;
-
     this._count = count;
   }
 

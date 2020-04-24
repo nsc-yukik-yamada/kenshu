@@ -13,12 +13,12 @@ function goldenRule(number) {
 
 function fibonacci(number,count) {
     let arrey = [];
-    let i = 0;
+    let i = -1;
     do {
+        i++;
       arrey[i] = number;
       number = Math.round(number * 1.618);
-      i++;
-    } while (i < count);
+    } while (arrey[i] < count);
     return arrey;
   }
   
@@ -37,7 +37,7 @@ function fibonacci(number,count) {
 let arrey =  goldenRule(1597);
 console.log(arrey);
 
-let arrey2 = fibonacci(1,5); 
+let arrey2 = fibonacci(1,1597); 
 console.log(arrey2);
 
 let arrey3 = fibonacci2(1,5); 

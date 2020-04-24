@@ -106,7 +106,7 @@ let fibonacci = makeFibonacci(shoki, 10);
 console.log(fibonacci);
 
 //素数チェック
-const number = 17;
+const number = 1077;
 let sosuuCheck = sosuu(number);
 if (sosuuCheck) {
   console.log(`${number}は素数です`);
